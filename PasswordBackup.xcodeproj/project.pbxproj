@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0408FAC12464163500096F4D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408FAC02464163500096F4D /* MainViewController.swift */; };
 		04162FFD24519D0500EEB028 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04162FFC24519D0500EEB028 /* GoogleService-Info.plist */; };
 		04452987245AC7B50096978D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04452986245AC7B50096978D /* AuthViewController.swift */; };
 		048017F92451903E00FDDC0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048017F82451903E00FDDC0F /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0408FAC02464163500096F4D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04162FFC24519D0500EEB028 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04452986245AC7B50096978D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		048017F52451903E00FDDC0F /* PasswordBackup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordBackup.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,25 +48,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04452988245AC8140096978D /* Controller */ = {
+		0408FABE2463F07F00096F4D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				04452986245AC7B50096978D /* AuthViewController.swift */,
+				0408FAC02464163500096F4D /* MainViewController.swift */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		04452989245AC8390096978D /* Supporting files */ = {
+		0408FABF2463F0D800096F4D /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
 				048017F82451903E00FDDC0F /* AppDelegate.swift */,
 				048017FA2451903E00FDDC0F /* SceneDelegate.swift */,
+				04162FFC24519D0500EEB028 /* GoogleService-Info.plist */,
 				048018012451904300FDDC0F /* Assets.xcassets */,
 				048018032451904300FDDC0F /* LaunchScreen.storyboard */,
-				048018062451904300FDDC0F /* Info.plist */,
-				04162FFC24519D0500EEB028 /* GoogleService-Info.plist */,
 			);
-			name = "Supporting files";
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 		048017EC2451903E00FDDC0F = {
@@ -88,8 +90,9 @@
 		048017F72451903E00FDDC0F /* PasswordBackup */ = {
 			isa = PBXGroup;
 			children = (
-				04452989245AC8390096978D /* Supporting files */,
-				04452988245AC8140096978D /* Controller */,
+				048018062451904300FDDC0F /* Info.plist */,
+				0408FABF2463F0D800096F4D /* Supporting files */,
+				0408FABE2463F07F00096F4D /* Controller */,
 				049B03F8245AC44B00A8209B /* Model */,
 				049B03F6245AC30F00A8209B /* View */,
 			);
@@ -249,6 +252,7 @@
 				04452987245AC7B50096978D /* AuthViewController.swift in Sources */,
 				048017F92451903E00FDDC0F /* AppDelegate.swift in Sources */,
 				048017FB2451903E00FDDC0F /* SceneDelegate.swift in Sources */,
+				0408FAC12464163500096F4D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
