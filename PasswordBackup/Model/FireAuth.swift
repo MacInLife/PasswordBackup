@@ -8,10 +8,13 @@
 
 import Foundation
 import Firebase
-import FirebaseAuth
+//import FirebaseAuth
 
 class FireAuth {
     let auth = Auth.auth()
+    var currentId: String? {
+        return auth.currentUser?.uid
+    }
     func signIn(email: String, password: String,  completion: @escaping (_ error: String?,_ uid: String?) -> Void) {
          // Se connecter
         auth.signIn(withEmail: email, password: password) { (data, error) in

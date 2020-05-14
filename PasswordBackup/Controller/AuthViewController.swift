@@ -16,6 +16,10 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var nicknameTF: UITextField!
     @IBOutlet weak var validateBtn: UIButton!
     
+//  1. Créer une nouvelle collection avec le signUp()
+//  2. Créer une troisième vue pour créer un nouveau Credential
+//  3. Sauvegarder le Credential
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -26,6 +30,8 @@ class AuthViewController: UIViewController {
                 self.emailTF.text = ""
                 self.passwordTF.text = ""
                 self.nicknameTF.text = ""
+                self.segmentedControl.selectedSegmentIndex = 0
+//      self.passwordTF.isSecureTextEntry = self.passwordTF.isSecureTextEntry ? false : true
             }
         }
     }
@@ -54,12 +60,12 @@ class AuthViewController: UIViewController {
                     self.presentAlert(title: "Erreur", message: error)
                 }
                 if let uid = uid {
-                  // Créer la collection Credentials(mdp + pseudo) de l'utilisateur dans la DB
+                  // Utilisation de uid > la collection Credentials(mdp + pseudo) de l'utilisateur dans la DB
                 }
              }
-                   print("CONNEXION")
+            print("CONNEXION")
             print("Email :", email)
-               print("Password :", password)
+            print("Password :", password)
          } else {
             // Inscription
             // Affiche le message si Pseudo pas rempli
@@ -71,8 +77,20 @@ class AuthViewController: UIViewController {
                  if let error = error {
                    self.presentAlert(title: "Erreur !", message: error)
                  }
+//              Tableau de crédential
+//              {
+//                  "uid": "123445",
+//                  "nickname": "vincent",
+//                  "credentials": [
+//                      {"title": "Gmail", "id": "vincent", "password": "1234"},
+//                      {"title": "Gmail", "id": "vincent", "password": "1234"},
+//                      {"title": "Gmail", "id": "vincent", "password": "1234"}
+//                  ]
+//              }
                  if let uid = uid {
                      // Créer la collection Credentials(mdp + pseudo) de l'utilisateur dans la DB
+                    let data : [String: Any] = ["uid": uid, "nickname": nickname]
+                    FireDB().addUser(uid, data: data)
                  }
              }
             print("INSCRIPTION")

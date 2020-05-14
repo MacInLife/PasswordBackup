@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0408FAC12464163500096F4D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408FAC02464163500096F4D /* MainViewController.swift */; };
 		04162FFD24519D0500EEB028 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04162FFC24519D0500EEB028 /* GoogleService-Info.plist */; };
+		042F6C7C246D3C9C00A94DB3 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F6C7B246D3C9C00A94DB3 /* CreateViewController.swift */; };
 		04452987245AC7B50096978D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04452986245AC7B50096978D /* AuthViewController.swift */; };
 		048017F92451903E00FDDC0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048017F82451903E00FDDC0F /* AppDelegate.swift */; };
 		048017FB2451903E00FDDC0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048017FA2451903E00FDDC0F /* SceneDelegate.swift */; };
@@ -16,12 +17,14 @@
 		048018022451904300FDDC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048018012451904300FDDC0F /* Assets.xcassets */; };
 		048018052451904300FDDC0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048018032451904300FDDC0F /* LaunchScreen.storyboard */; };
 		049B03FA245AC49900A8209B /* FireAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B03F9245AC49900A8209B /* FireAuth.swift */; };
+		04C3B5E6246D265800EBE429 /* FireDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3B5E5246D265800EBE429 /* FireDB.swift */; };
 		5A1F9903341DD28C440BB3C0 /* Pods_PasswordBackup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A550D4B5A16CDA9EA1C8CD /* Pods_PasswordBackup.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0408FAC02464163500096F4D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04162FFC24519D0500EEB028 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		042F6C7B246D3C9C00A94DB3 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		04452986245AC7B50096978D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		048017F52451903E00FDDC0F /* PasswordBackup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordBackup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048017F82451903E00FDDC0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 		048018042451904300FDDC0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		048018062451904300FDDC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049B03F9245AC49900A8209B /* FireAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireAuth.swift; sourceTree = "<group>"; };
+		04C3B5E5246D265800EBE429 /* FireDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDB.swift; sourceTree = "<group>"; };
 		1922AC48ED6CEED8524BF2E1 /* Pods-PasswordBackup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordBackup.release.xcconfig"; path = "Target Support Files/Pods-PasswordBackup/Pods-PasswordBackup.release.xcconfig"; sourceTree = "<group>"; };
 		23A550D4B5A16CDA9EA1C8CD /* Pods_PasswordBackup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordBackup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88D1868EA505D084A13E375 /* Pods-PasswordBackup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordBackup.debug.xcconfig"; path = "Target Support Files/Pods-PasswordBackup/Pods-PasswordBackup.debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			children = (
 				04452986245AC7B50096978D /* AuthViewController.swift */,
 				0408FAC02464163500096F4D /* MainViewController.swift */,
+				042F6C7B246D3C9C00A94DB3 /* CreateViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				049B03F9245AC49900A8209B /* FireAuth.swift */,
+				04C3B5E5246D265800EBE429 /* FireDB.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,6 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				049B03FA245AC49900A8209B /* FireAuth.swift in Sources */,
+				04C3B5E6246D265800EBE429 /* FireDB.swift in Sources */,
+				042F6C7C246D3C9C00A94DB3 /* CreateViewController.swift in Sources */,
 				04452987245AC7B50096978D /* AuthViewController.swift in Sources */,
 				048017F92451903E00FDDC0F /* AppDelegate.swift in Sources */,
 				048017FB2451903E00FDDC0F /* SceneDelegate.swift in Sources */,

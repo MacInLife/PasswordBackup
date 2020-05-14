@@ -10,4 +10,5 @@ target 'PasswordBackup' do
 pod 'Firebase/Analytics' 
 pod 'Firebase/Auth' 
 pod 'Firebase/Storage'
+pod 'Firebase/Firestore'
 end
