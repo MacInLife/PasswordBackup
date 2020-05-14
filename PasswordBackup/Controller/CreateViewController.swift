@@ -45,7 +45,12 @@ class CreateViewController: UIViewController {
            return
         }
         // Ajouter un credentials
-        
+          if let uid = uid {
+            let data : [String: Any] = ["uid": uid, "credentials": credentials
+            FireDB().addCredentials(uid, data: data)
+            
+        }
+                
     }
     
 
