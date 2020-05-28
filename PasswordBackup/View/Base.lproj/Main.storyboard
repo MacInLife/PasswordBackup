@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -39,6 +40,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="JF9-Wi-jr3"/>
                                 </constraints>
+                                <color key="textColor" name="BlackGrey"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" textContentType="email"/>
                             </textField>
@@ -60,6 +62,7 @@
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="stj-lU-Bpe">
                                 <rect key="frame" x="20" y="108" width="374" height="32"/>
+                                <color key="backgroundColor" name="Beige"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="gl8-Na-0hD"/>
                                 </constraints>
@@ -73,23 +76,32 @@
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pL-6y-sbG">
                                 <rect key="frame" x="0.0" y="832" width="414" height="30"/>
-                                <color key="backgroundColor" red="0.1176470588" green="0.61568627450000002" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="Dorure"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Vbf-gC-z2P"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="BlackGrey"/>
                                 <state key="normal" title="Se connecter">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" name="BlackGrey"/>
                                 </state>
                                 <connections>
                                     <action selector="validateBtnDidPressed:" destination="6SG-TG-gv9" eventType="touchUpInside" id="ZJ4-m9-7f4"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" image="LogoDetourer" translatesAutoresizingMaskIntoConstraints="NO" id="UMV-3O-vXN">
+                                <rect key="frame" x="143" y="384" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="VSM-Xe-aLl"/>
+                                    <constraint firstAttribute="height" constant="128" id="WKr-be-hlm"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="60K-pl-Qim" firstAttribute="trailing" secondItem="CTa-XA-Hm0" secondAttribute="trailing" constant="20" id="5QD-K5-8tZ"/>
                             <constraint firstItem="cBx-ck-XdH" firstAttribute="leading" secondItem="60K-pl-Qim" secondAttribute="leading" constant="20" id="Bcj-dH-uE4"/>
+                            <constraint firstItem="UMV-3O-vXN" firstAttribute="centerX" secondItem="6bB-pQ-gwo" secondAttribute="centerX" id="C8I-ak-sbC"/>
+                            <constraint firstItem="UMV-3O-vXN" firstAttribute="centerY" secondItem="6bB-pQ-gwo" secondAttribute="centerY" id="ECp-6u-C9X"/>
                             <constraint firstItem="CTa-XA-Hm0" firstAttribute="top" secondItem="G5f-WH-NoT" secondAttribute="bottom" constant="20" id="EDK-6Q-pHf"/>
                             <constraint firstItem="60K-pl-Qim" firstAttribute="trailing" secondItem="stj-lU-Bpe" secondAttribute="trailing" constant="20" id="IAT-tl-ptw"/>
                             <constraint firstItem="60K-pl-Qim" firstAttribute="bottom" secondItem="6pL-6y-sbG" secondAttribute="bottom" id="OLC-ph-I4f"/>
@@ -157,11 +169,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="NHz-gh-tgE">
                         <barButtonItem key="leftBarButtonItem" title="Déconnexion" id="uvz-2A-Gwh">
+                            <color key="tintColor" name="OrangeMarron"/>
                             <connections>
                                 <action selector="logoutBtnDidPressed:" destination="yof-3Y-AfE" id="Ybc-od-rZ0"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Ajouter" image="plus" catalog="system" id="vAS-mw-58x">
+                            <color key="tintColor" name="OrangeMarron"/>
                             <connections>
                                 <segue destination="Pyi-cN-DgQ" kind="presentation" modalPresentationStyle="fullScreen" id="I47-zP-aQS"/>
                             </connections>
@@ -217,12 +231,12 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBI-SZ-MVO">
                                 <rect key="frame" x="0.0" y="832" width="414" height="30"/>
-                                <color key="backgroundColor" red="0.1176470588" green="0.61568627450000002" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="Dorure"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GNF-M3-Npe"/>
                                 </constraints>
                                 <state key="normal" title="Sauvegarder">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" name="BlackGrey"/>
                                 </state>
                                 <connections>
                                     <action selector="validateBtnDidPressed:" destination="IjS-Xo-Ank" eventType="touchUpInside" id="E0V-Ec-Kbp"/>
@@ -233,9 +247,9 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dnt-KG-dNs">
                                         <rect key="frame" x="0.0" y="0.0" width="177" height="30"/>
-                                        <color key="backgroundColor" red="0.1176470588" green="0.61568627450000002" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="Beige"/>
                                         <state key="normal" title="Copier">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" name="BlackGrey"/>
                                         </state>
                                         <connections>
                                             <action selector="copyBtnDidPressed:" destination="IjS-Xo-Ank" eventType="touchUpInside" id="EUh-Ug-g8w"/>
@@ -243,9 +257,9 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOc-sS-YVv">
                                         <rect key="frame" x="197" y="0.0" width="177" height="30"/>
-                                        <color key="backgroundColor" red="0.1176470588" green="0.61568627450000002" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="Beige"/>
                                         <state key="normal" title="Partager">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" name="BlackGrey"/>
                                         </state>
                                         <connections>
                                             <action selector="shareBtnDidPressed:" destination="IjS-Xo-Ank" eventType="touchUpInside" id="sDW-7V-Yzr"/>
@@ -256,13 +270,22 @@
                                     <constraint firstAttribute="height" constant="30" id="CUw-2j-tep"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" image="LogoDetourer" translatesAutoresizingMaskIntoConstraints="NO" id="gew-c8-ebX">
+                                <rect key="frame" x="143" y="384" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="4R8-4S-DU6"/>
+                                    <constraint firstAttribute="width" constant="128" id="BJq-0j-JWz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kpR-Al-nbp" firstAttribute="top" secondItem="3xe-4n-V2H" secondAttribute="top" constant="20" id="0J8-Nv-iyB"/>
                             <constraint firstItem="3xe-4n-V2H" firstAttribute="trailing" secondItem="yQ9-u0-gOZ" secondAttribute="trailing" constant="20" id="4rN-H1-ML6"/>
                             <constraint firstItem="yQ9-u0-gOZ" firstAttribute="leading" secondItem="3xe-4n-V2H" secondAttribute="leading" constant="20" id="Ba5-6n-rvr"/>
                             <constraint firstItem="TZe-6x-EZn" firstAttribute="leading" secondItem="3xe-4n-V2H" secondAttribute="leading" constant="20" id="C3m-GJ-41V"/>
+                            <constraint firstItem="gew-c8-ebX" firstAttribute="centerY" secondItem="rv5-tR-c5L" secondAttribute="centerY" id="CzY-eP-X7E"/>
+                            <constraint firstItem="gew-c8-ebX" firstAttribute="centerX" secondItem="rv5-tR-c5L" secondAttribute="centerX" id="FtN-Y2-yKZ"/>
                             <constraint firstItem="3xe-4n-V2H" firstAttribute="bottom" secondItem="nBI-SZ-MVO" secondAttribute="bottom" id="IsP-kU-r7M"/>
                             <constraint firstItem="TZe-6x-EZn" firstAttribute="top" secondItem="Q89-QY-yow" secondAttribute="bottom" constant="20" id="OYh-z8-ffG"/>
                             <constraint firstItem="Q89-QY-yow" firstAttribute="top" secondItem="YRr-JL-gkC" secondAttribute="bottom" constant="20" id="SNx-KN-Nee"/>
@@ -283,11 +306,13 @@
                     <navigationItem key="navigationItem" id="Y6h-nv-s7D">
                         <barButtonItem key="backBarButtonItem" title="Retour" id="a5V-hw-3lT"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="wxr-NE-PR9">
+                            <color key="tintColor" name="OrangeMarron"/>
                             <connections>
                                 <action selector="cancelBtnDidPressed:" destination="IjS-Xo-Ank" id="eSW-SQ-pIn"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="5hQ-us-3ug">
+                            <color key="tintColor" name="OrangeMarron"/>
                             <connections>
                                 <action selector="saveBtnDidPressed:" destination="IjS-Xo-Ank" id="eaR-He-cQO"/>
                             </connections>
@@ -324,6 +349,22 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LogoDetourer" width="512" height="512"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.98431372549019602" green="0.95294117647058818" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Beige">
+            <color red="0.93333333333333335" green="0.792156862745098" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BlackGrey">
+            <color red="0.16470588235294117" green="0.16470588235294117" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dorure">
+            <color red="0.81568627450980391" green="0.59999999999999998" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrangeMarron">
+            <color red="0.70980392156862748" green="0.43137254901960786" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

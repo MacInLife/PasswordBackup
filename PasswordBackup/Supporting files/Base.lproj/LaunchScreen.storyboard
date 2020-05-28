@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +14,52 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo_PasswordBackup" translatesAutoresizingMaskIntoConstraints="NO" id="fix-dD-X6A">
+                                <rect key="frame" x="79" y="271" width="256" height="354"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Pnt-PY-qI5">
+                                <rect key="frame" x="20" y="745" width="374" height="37"/>
+                                <rect key="contentStretch" x="0.69999999999999996" y="0.0" width="1" height="1"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password Backup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yi4-IQ-jNA">
+                                <rect key="frame" x="20" y="231" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ICl-2S-rcR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Beige"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pnt-PY-qI5" secondAttribute="trailing" constant="20" id="4bo-pq-hlp"/>
+                            <constraint firstItem="fix-dD-X6A" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="8g5-LN-DXK"/>
+                            <constraint firstItem="Pnt-PY-qI5" firstAttribute="top" secondItem="fix-dD-X6A" secondAttribute="bottom" constant="120" id="BPo-Q1-Obn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pnt-PY-qI5" secondAttribute="bottom" constant="80" id="Bk9-Wg-pNV"/>
+                            <constraint firstItem="Pnt-PY-qI5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RV3-EB-YYJ"/>
+                            <constraint firstItem="Pnt-PY-qI5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bbR-nC-Ad6"/>
+                            <constraint firstItem="Yi4-IQ-jNA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="frt-n9-VM3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yi4-IQ-jNA" secondAttribute="trailing" constant="20" id="uBr-cx-4bN"/>
+                            <constraint firstItem="fix-dD-X6A" firstAttribute="top" secondItem="Yi4-IQ-jNA" secondAttribute="bottom" id="v2Z-pX-8aV"/>
+                            <constraint firstItem="Yi4-IQ-jNA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xKJ-Xg-7bZ"/>
+                            <constraint firstItem="fix-dD-X6A" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yS9-1B-q0C"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo_PasswordBackup" width="256" height="256"/>
+        <namedColor name="Beige">
+            <color red="0.93333333333333335" green="0.792156862745098" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

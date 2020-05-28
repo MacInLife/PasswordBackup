@@ -42,9 +42,9 @@ class FireDB {
             completion(nil, "Erreur, vous n'etes pas connecté !")
             return
        }
-        users.document(uid).collection("credentialsCollection").addSnapshotListener { (snapshot, error) in
-            <#code#>
-        }
+//        users.document(uid).collection("credentialsCollection").addSnapshotListener { (snapshot, error) in
+//
+//        }
     }
 
 }
