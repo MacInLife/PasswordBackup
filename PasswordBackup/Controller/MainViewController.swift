@@ -10,6 +10,10 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    var credentialsCollection: [Credentials] = []
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,4 +41,18 @@ class MainViewController: UIViewController {
     }
     */
 
+}
+
+extension MainViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return credentialsCollection.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "credentialsCell", for: indexPath)
+        cell.textLabel?.text = credentialsCollection[indexPath.row].title
+        return cell
+    }
 }

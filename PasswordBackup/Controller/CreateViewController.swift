@@ -27,42 +27,46 @@ class CreateViewController: UIViewController {
     }
     @IBAction func shareBtnDidPressed(_ sender: Any) {
     }
-    @IBAction func validateBtnDidPressed(_ sender: Any) {
-        guard let title = titleTF.text, title != "" else {
-            presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné de titre !")
-            return
-        }
-        guard let nickname = nicknameTF.text, nickname != "" else {
-            presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné de pseudo !")
-            return
-        }
-        guard let password = passwordTF.text, password != "" else {
-            presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné de mot de passe !")
-            return
-        }
-        guard let url = urlTF.text, url != "" else {
-           presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné d'URL !")
-           return
-        }
-        //Vérifier que l'url soit valide
-        
-        // Ajouter un credentials
-        let data : [String: Any] = [
-            "title" : title,
-            "nickname" : nickname,
-            "password" : password,
-            "url" : url
-        ]
-        FireDB().addCredentials(data: data) { (error) in
-            if let error = error {
-              self.presentAlert(title: "error", message: error)
-              return
-            }
-            //Naviguer vers la page précédentes
-        }
-       
-    }
     
+    @IBAction func cancelBtnDidPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        }
+    
+    @IBAction func saveBtnDidPressed(_ sender: Any) {
+        guard let title = titleTF.text, title != "" else {
+                  presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné de titre !")
+                  return
+              }
+              guard let nickname = nicknameTF.text, nickname != "" else {
+                  presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné de pseudo !")
+                  return
+              }
+              guard let password = passwordTF.text, password != "" else {
+                  presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné de mot de passe !")
+                  return
+              }
+              guard let url = urlTF.text, url != "" else {
+                 presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné d'URL !")
+                 return
+              }
+              //Vérifier que l'url soit valide
+              
+              // Ajouter un credentials
+              let data : [String: Any] = [
+                  "title" : title,
+                  "nickname" : nickname,
+                  "password" : password,
+                  "url" : url
+              ]
+              FireDB().addCredentials(data: data) { (error) in
+                  if let error = error {
+                    self.presentAlert(title: "error", message: error)
+                    return
+                  }
+                  //Naviguer vers la page précédentes
+                self.dismiss(animated: true, completion: nil)
+              }
+    }
     
 
     private func presentAlert(title: String, message: String) {

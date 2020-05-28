@@ -36,19 +36,15 @@ class FireDB {
             completion(nil)
         }
     }
-//    func addCredentials(_ uid: String, data: [String: Any]){
-//        credentials.document(uid).setData(data)
-//        credentials.document(uid).updateData([
-//            "title": "Gmail",
-//            "nickname": "vincent",
-//            "password": "1234",
-//            "url": "http://www.google.fr"
-//        ]){ err in
-//            if let err = err {
-//                print("Error updating document: \(err)")
-//            } else {
-//                print("Document successfully updated")
-//            }
-//        }
-//    }
+    func getCredentialsCollection(completion: @escaping ([Credentials]?, String?) -> Void){
+        //Récupération uid
+        guard let uid = FireAuth().currentId else {
+            completion(nil, "Erreur, vous n'etes pas connecté !")
+            return
+       }
+        users.document(uid).collection("credentialsCollection").addSnapshotListener { (snapshot, error) in
+            <#code#>
+        }
+    }
+
 }

@@ -18,6 +18,7 @@
 		048018052451904300FDDC0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048018032451904300FDDC0F /* LaunchScreen.storyboard */; };
 		049B03FA245AC49900A8209B /* FireAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B03F9245AC49900A8209B /* FireAuth.swift */; };
 		04C3B5E6246D265800EBE429 /* FireDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3B5E5246D265800EBE429 /* FireDB.swift */; };
+		04E4889F247FB8C8001FFF5E /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4889E247FB8C8001FFF5E /* Credentials.swift */; };
 		5A1F9903341DD28C440BB3C0 /* Pods_PasswordBackup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A550D4B5A16CDA9EA1C8CD /* Pods_PasswordBackup.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,9 @@
 		048018062451904300FDDC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049B03F9245AC49900A8209B /* FireAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireAuth.swift; sourceTree = "<group>"; };
 		04C3B5E5246D265800EBE429 /* FireDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDB.swift; sourceTree = "<group>"; };
+		04E4889C247FAC39001FFF5E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		04E4889D247FAC3A001FFF5E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		04E4889E247FB8C8001FFF5E /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		1922AC48ED6CEED8524BF2E1 /* Pods-PasswordBackup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordBackup.release.xcconfig"; path = "Target Support Files/Pods-PasswordBackup/Pods-PasswordBackup.release.xcconfig"; sourceTree = "<group>"; };
 		23A550D4B5A16CDA9EA1C8CD /* Pods_PasswordBackup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordBackup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88D1868EA505D084A13E375 /* Pods-PasswordBackup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordBackup.debug.xcconfig"; path = "Target Support Files/Pods-PasswordBackup/Pods-PasswordBackup.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 			children = (
 				049B03F9245AC49900A8209B /* FireAuth.swift */,
 				04C3B5E5246D265800EBE429 /* FireDB.swift */,
+				04E4889E247FB8C8001FFF5E /* Credentials.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 048017EC2451903E00FDDC0F;
 			productRefGroup = 048017F62451903E00FDDC0F /* Products */;
@@ -256,6 +262,7 @@
 			files = (
 				049B03FA245AC49900A8209B /* FireAuth.swift in Sources */,
 				04C3B5E6246D265800EBE429 /* FireDB.swift in Sources */,
+				04E4889F247FB8C8001FFF5E /* Credentials.swift in Sources */,
 				042F6C7C246D3C9C00A94DB3 /* CreateViewController.swift in Sources */,
 				04452987245AC7B50096978D /* AuthViewController.swift in Sources */,
 				048017F92451903E00FDDC0F /* AppDelegate.swift in Sources */,
@@ -271,6 +278,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				048017FF2451903E00FDDC0F /* Base */,
+				04E4889D247FAC3A001FFF5E /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -279,6 +287,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				048018042451904300FDDC0F /* Base */,
+				04E4889C247FAC39001FFF5E /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -290,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -350,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
