@@ -1,0 +1,54 @@
+
+/* Class = "UIButton"; normalTitle = "Se connecter"; ObjectID = "6pL-6y-sbG"; */
+"6pL-6y-sbG.normalTitle" = "Se connecter";
+
+/* Class = "UINavigationItem"; title = "Bienvenue"; ObjectID = "C1h-pH-ZMh"; */
+"C1h-pH-ZMh.title" = "Bienvenue";
+
+/* Class = "UITextField"; placeholder = "Mot de passe"; ObjectID = "CTa-XA-Hm0"; */
+"CTa-XA-Hm0.placeholder" = "Mot de passe";
+
+/* Class = "UIButton"; normalTitle = "Copier"; ObjectID = "Dnt-KG-dNs"; */
+"Dnt-KG-dNs.normalTitle" = "Copier";
+
+/* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "G5f-WH-NoT"; */
+"G5f-WH-NoT.placeholder" = "E-mail";
+
+/* Class = "UITextField"; placeholder = "Mot de passe"; ObjectID = "Q89-QY-yow"; */
+"Q89-QY-yow.placeholder" = "Mot de passe";
+
+/* Class = "UITextField"; placeholder = "URL"; ObjectID = "TZe-6x-EZn"; */
+"TZe-6x-EZn.placeholder" = "URL";
+
+/* Class = "UIButton"; normalTitle = "Partager"; ObjectID = "VOc-sS-YVv"; */
+"VOc-sS-YVv.normalTitle" = "Partager";
+
+/* Class = "UITextField"; placeholder = "Pseudo"; ObjectID = "YRr-JL-gkC"; */
+"YRr-JL-gkC.placeholder" = "Pseudo";
+
+/* Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "a5V-hw-3lT"; */
+"a5V-hw-3lT.title" = "Retour";
+
+/* Class = "UITextField"; placeholder = "Pseudo"; ObjectID = "cBx-ck-XdH"; */
+"cBx-ck-XdH.placeholder" = "Pseudo";
+
+/* Class = "UITextField"; placeholder = "Titre"; ObjectID = "kpR-Al-nbp"; */
+"kpR-Al-nbp.placeholder" = "Titre";
+
+/* Class = "UIButton"; normalTitle = "Sauvegarder"; ObjectID = "nBI-SZ-MVO"; */
+"nBI-SZ-MVO.normalTitle" = "Sauvegarder";
+
+/* Class = "UISegmentedControl"; stj-lU-Bpe.segmentTitles[0] = "Connexion"; ObjectID = "stj-lU-Bpe"; */
+"stj-lU-Bpe.segmentTitles[0]" = "Connexion";
+
+/* Class = "UISegmentedControl"; stj-lU-Bpe.segmentTitles[1] = "Inscription"; ObjectID = "stj-lU-Bpe"; */
+"stj-lU-Bpe.segmentTitles[1]" = "Inscription";
+
+/* Class = "UIBarButtonItem"; title = "Déconnexion"; ObjectID = "uvz-2A-Gwh"; */
+"uvz-2A-Gwh.title" = "Déconnexion";
+
+/* Class = "UIBarButtonItem"; title = "Ajouter"; ObjectID = "vAS-mw-58x"; */
+"vAS-mw-58x.title" = "Ajouter";
+
+/* Class = "UILabel"; text = "MainView"; ObjectID = "ypL-s2-fNI"; */
+"ypL-s2-fNI.text" = "MainView";
