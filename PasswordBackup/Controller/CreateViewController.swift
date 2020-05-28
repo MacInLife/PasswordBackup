@@ -44,14 +44,25 @@ class CreateViewController: UIViewController {
            presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné d'URL !")
            return
         }
+        //Vérifier que l'url soit valide
+        
         // Ajouter un credentials
-          if let uid = uid {
-            let data : [String: Any] = ["uid": uid, "credentials": credentials
-            FireDB().addCredentials(uid, data: data)
-            
+        let data : [String: Any] = [
+            "title" : title,
+            "nickname" : nickname,
+            "password" : password,
+            "url" : url
+        ]
+        FireDB().addCredentials(data: data) { (error) in
+            if let error = error {
+              self.presentAlert(title: "error", message: error)
+              return
+            }
+            //Naviguer vers la page précédentes
         }
-                
+       
     }
+    
     
 
     private func presentAlert(title: String, message: String) {

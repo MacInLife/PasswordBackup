@@ -59,9 +59,6 @@ class AuthViewController: UIViewController {
                 if let error = error {
                     self.presentAlert(title: "Erreur", message: error)
                 }
-                if let uid = uid {
-                  // Utilisation de uid > la collection Credentials(mdp + pseudo) de l'utilisateur dans la DB
-                }
              }
             print("CONNEXION")
             print("Email :", email)

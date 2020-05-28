@@ -23,19 +23,32 @@ class FireDB {
     func addUser(_ uid: String, data: [String: Any]) {
         users.document(uid).setData(data)
     }
-    func addCredentials(_ uid: String, data: [String: Any]){
-        credentials.document(uid).setData(data)
-        credentials.document(uid).updateData([
-            "title": "Gmail",
-            "nickname": "vincent",
-            "password": "1234",
-            "url": "http://www.google.fr"
-        ]){ err in
-            if let err = err {
-                print("Error updating document: \(err)")
-            } else {
-                print("Document successfully updated")
+    func addCredentials(data: [String: Any], completion: @escaping (_ error: String?) -> Void) {
+        guard let uid = FireAuth().currentId else {
+        completion("Erreur, vous n'etes pas connecté !")
+        return
+        }
+        users.document(uid).collection("credentialsCollection").document().setData(data) { (error) in
+            if let error = error {
+                completion(error.localizedDescription)
+                return
             }
+            completion(nil)
         }
     }
+//    func addCredentials(_ uid: String, data: [String: Any]){
+//        credentials.document(uid).setData(data)
+//        credentials.document(uid).updateData([
+//            "title": "Gmail",
+//            "nickname": "vincent",
+//            "password": "1234",
+//            "url": "http://www.google.fr"
+//        ]){ err in
+//            if let err = err {
+//                print("Error updating document: \(err)")
+//            } else {
+//                print("Document successfully updated")
+//            }
+//        }
+//    }
 }
