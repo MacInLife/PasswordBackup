@@ -42,9 +42,22 @@ class FireDB {
             completion(nil, "Erreur, vous n'etes pas connecté !")
             return
        }
-//        users.document(uid).collection("credentialsCollection").addSnapshotListener { (snapshot, error) in
-//
-//        }
+        users.document(uid).collection("credentialsCollection").addSnapshotListener { (snapshot, error) in
+            if let error = error {
+                completion(nil, error.localizedDescription)
+                return
+            }
+            guard let snapshot = snapshot else {
+                completion(nil, "Erreur indéterminée")
+                return
+            }
+            var credentialsCollection: [Credentials] = []
+            let documents = snapshot.documents
+            for document in documents {
+                credentialsCollection.append(Credentials(document: document))
+            }
+            completion(credentialsCollection, nil)
+        }
     }
 
 }

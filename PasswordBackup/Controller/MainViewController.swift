@@ -16,8 +16,21 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        FireDB().getCredentialsCollection { (credentialsCollection, error) in
+            if let error = error {
+                self.presentAlert(title: "error", message: error)
+                return
+            }
+            guard let credentialsCollection = credentialsCollection else {
+                self.presentAlert(title: "error", message: "Erreur indéterminée")
+                return
+            }
+            self.credentialsCollection = credentialsCollection
+            self.tableView.reloadData()
+        }
 
         // Do any additional setup after loading the view.
+       
     }
     
     @IBAction func logoutBtnDidPressed(_ sender: Any) {
@@ -40,7 +53,11 @@ class MainViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+//    func presentAlert(title: String, message: String) {
+//             let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+//             alertVC.addAction(UIAlertAction(title: "J’ai compris", style: .default, handler: nil))
+//             present(alertVC, animated: true, completion: nil)
+//         }
 }
 
 extension MainViewController: UITableViewDataSource {

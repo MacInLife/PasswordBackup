@@ -34,11 +34,11 @@ class CreateViewController: UIViewController {
     
     @IBAction func saveBtnDidPressed(_ sender: Any) {
         guard let title = titleTF.text, title != "" else {
-                  presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné de titre !")
+            presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné de titre !")
                   return
               }
               guard let nickname = nicknameTF.text, nickname != "" else {
-                  presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné de pseudo !")
+                presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné de pseudo !")
                   return
               }
               guard let password = passwordTF.text, password != "" else {
@@ -69,9 +69,9 @@ class CreateViewController: UIViewController {
     }
     
 
-    private func presentAlert(title: String, message: String) {
-           let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
-           alertVC.addAction(UIAlertAction(title: "J’ai compris", style: .default, handler: nil))
-           present(alertVC, animated: true, completion: nil)
-       }
+//    private func presentAlert(title: String, message: String) {
+//           let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+//           alertVC.addAction(UIAlertAction(title: "J’ai compris", style: .default, handler: nil))
+//           present(alertVC, animated: true, completion: nil)
+//       }
 }

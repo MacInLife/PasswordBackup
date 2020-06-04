@@ -11,6 +11,7 @@
 		04162FFD24519D0500EEB028 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04162FFC24519D0500EEB028 /* GoogleService-Info.plist */; };
 		042F6C7C246D3C9C00A94DB3 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F6C7B246D3C9C00A94DB3 /* CreateViewController.swift */; };
 		04452987245AC7B50096978D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04452986245AC7B50096978D /* AuthViewController.swift */; };
+		0463C5502488D07900429516 /* ExtensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463C54F2488D07900429516 /* ExtensionUIViewController.swift */; };
 		048017F92451903E00FDDC0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048017F82451903E00FDDC0F /* AppDelegate.swift */; };
 		048017FB2451903E00FDDC0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048017FA2451903E00FDDC0F /* SceneDelegate.swift */; };
 		048018002451903E00FDDC0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048017FE2451903E00FDDC0F /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		04162FFC24519D0500EEB028 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		042F6C7B246D3C9C00A94DB3 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		04452986245AC7B50096978D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		0463C54F2488D07900429516 /* ExtensionUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIViewController.swift; sourceTree = "<group>"; };
 		048017F52451903E00FDDC0F /* PasswordBackup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordBackup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048017F82451903E00FDDC0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		048017FA2451903E00FDDC0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				04162FFC24519D0500EEB028 /* GoogleService-Info.plist */,
 				048018012451904300FDDC0F /* Assets.xcassets */,
 				048018032451904300FDDC0F /* LaunchScreen.storyboard */,
+				0463C54F2488D07900429516 /* ExtensionUIViewController.swift */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			files = (
 				049B03FA245AC49900A8209B /* FireAuth.swift in Sources */,
 				04C3B5E6246D265800EBE429 /* FireDB.swift in Sources */,
+				0463C5502488D07900429516 /* ExtensionUIViewController.swift in Sources */,
 				04E4889F247FB8C8001FFF5E /* Credentials.swift in Sources */,
 				042F6C7C246D3C9C00A94DB3 /* CreateViewController.swift in Sources */,
 				04452987245AC7B50096978D /* AuthViewController.swift in Sources */,
