@@ -15,6 +15,8 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var nicknameTF: UITextField!
     @IBOutlet weak var validateBtn: UIButton!
+    @IBOutlet weak var eyeClosed: UIButton!
+    @IBOutlet weak var eye: UIButton!
     
 //  1. Créer une nouvelle collection avec le signUp()
 //  2. Créer une troisième vue pour créer un nouveau Credential
@@ -41,7 +43,19 @@ class AuthViewController: UIViewController {
         view.endEditing(true)
     }
 
-// Liaison avec la vue, élément d'Action
+    @IBAction func eyeClosedBtnDidPressed(_ sender: Any) {
+         self.passwordTF.isSecureTextEntry =  true
+         self.eyeClosed.alpha = 0
+         self.eye.alpha = 1
+        
+    }
+    @IBAction func eyeBtnDidPressed(_ sender: Any) {
+          self.passwordTF.isSecureTextEntry =  false
+        self.eye.alpha = 0
+         self.eyeClosed.alpha = 1
+    }
+    
+    // Liaison avec la vue, élément d'Action
     @IBAction func validateBtnDidPressed(_ sender: Any) {
         // Inscrire l'utilisateur
         guard let email = emailTF.text, email != "" else {

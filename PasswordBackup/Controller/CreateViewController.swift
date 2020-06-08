@@ -15,11 +15,26 @@ class CreateViewController: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var urlTF: UITextField!
     
+    @IBOutlet weak var eyeClosed: UIButton!
+    @IBOutlet weak var eye: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func eyeClosedBtnDidPressed(_ sender: Any) {
+          self.passwordTF.isSecureTextEntry =  true
+        self.eyeClosed.alpha = 0
+          self.eye.alpha = 1
+         
+     }
+     @IBAction func eyeBtnDidPressed(_ sender: Any) {
+           self.passwordTF.isSecureTextEntry =  false
+         self.eye.alpha = 0
+          self.eyeClosed.alpha = 1
+     }
     
     @IBAction func copyBtnDidPressed(_ sender: Any) {
         UIPasteboard.general.string = passwordTF.text
