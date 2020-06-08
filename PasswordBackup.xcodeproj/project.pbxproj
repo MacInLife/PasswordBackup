@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0402B02D248E4EF5001E4523 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402B02C248E4EF5001E4523 /* DetailViewController.swift */; };
 		0408FAC12464163500096F4D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408FAC02464163500096F4D /* MainViewController.swift */; };
 		04162FFD24519D0500EEB028 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04162FFC24519D0500EEB028 /* GoogleService-Info.plist */; };
 		042F6C7C246D3C9C00A94DB3 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F6C7B246D3C9C00A94DB3 /* CreateViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0402B02C248E4EF5001E4523 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0408FAC02464163500096F4D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04162FFC24519D0500EEB028 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		042F6C7B246D3C9C00A94DB3 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				04452986245AC7B50096978D /* AuthViewController.swift */,
 				0408FAC02464163500096F4D /* MainViewController.swift */,
 				042F6C7B246D3C9C00A94DB3 /* CreateViewController.swift */,
+				0402B02C248E4EF5001E4523 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				042F6C7C246D3C9C00A94DB3 /* CreateViewController.swift in Sources */,
 				04452987245AC7B50096978D /* AuthViewController.swift in Sources */,
 				048017F92451903E00FDDC0F /* AppDelegate.swift in Sources */,
+				0402B02D248E4EF5001E4523 /* DetailViewController.swift in Sources */,
 				048017FB2451903E00FDDC0F /* SceneDelegate.swift in Sources */,
 				0408FAC12464163500096F4D /* MainViewController.swift in Sources */,
 			);

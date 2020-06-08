@@ -11,6 +11,7 @@ import UIKit
 class MainViewController: UIViewController {
 
     var credentialsCollection: [Credentials] = []
+    var selectedCredential: Credentials?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -28,9 +29,17 @@ class MainViewController: UIViewController {
             self.credentialsCollection = credentialsCollection
             self.tableView.reloadData()
         }
+        tableView.delegate = self
 
         // Do any additional setup after loading the view.
        
+    }
+      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        guard segue.identifier == "toDetail", let selectedCredential = self.selectedCredential else { return }
+        let detailVC = segue.destination as! DetailViewController
+        detailVC.credentialsCollection = selectedCredential
+
     }
     
     @IBAction func logoutBtnDidPressed(_ sender: Any) {
@@ -73,3 +82,19 @@ extension MainViewController: UITableViewDataSource {
         return cell
     }
 }
+extension MainViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("SELECT")
+        self.selectedCredential = credentialsCollection[indexPath.row]
+        performSegue(withIdentifier: "toDetail", sender: nil)
+    }
+     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+           if editingStyle == .delete {
+               print("DELETE")
+               credentialsCollection.remove(at: indexPath.row)
+               tableView.deleteRows(at: [indexPath], with: .automatic)
+           }
+       }
+ 
+}
+
