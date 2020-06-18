@@ -271,19 +271,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBI-SZ-MVO">
-                                <rect key="frame" x="0.0" y="832" width="414" height="30"/>
-                                <color key="backgroundColor" name="Dorure"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="GNF-M3-Npe"/>
-                                </constraints>
-                                <state key="normal" title="Sauvegarder">
-                                    <color key="titleColor" name="BlackGrey"/>
-                                </state>
-                                <connections>
-                                    <action selector="validateBtnDidPressed:" destination="IjS-Xo-Ank" eventType="touchUpInside" id="E0V-Ec-Kbp"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yQ9-u0-gOZ">
                                 <rect key="frame" x="20" y="324" width="374" height="30"/>
                                 <subviews>
@@ -364,7 +351,6 @@
                             <constraint firstItem="TZe-6x-EZn" firstAttribute="leading" secondItem="3xe-4n-V2H" secondAttribute="leading" constant="20" id="C3m-GJ-41V"/>
                             <constraint firstItem="gew-c8-ebX" firstAttribute="centerY" secondItem="rv5-tR-c5L" secondAttribute="centerY" id="CzY-eP-X7E"/>
                             <constraint firstItem="gew-c8-ebX" firstAttribute="centerX" secondItem="rv5-tR-c5L" secondAttribute="centerX" id="FtN-Y2-yKZ"/>
-                            <constraint firstItem="3xe-4n-V2H" firstAttribute="bottom" secondItem="nBI-SZ-MVO" secondAttribute="bottom" id="IsP-kU-r7M"/>
                             <constraint firstItem="3xe-4n-V2H" firstAttribute="trailing" secondItem="iHE-up-nh5" secondAttribute="trailing" constant="30" id="Jig-AB-WXk"/>
                             <constraint firstItem="TZe-6x-EZn" firstAttribute="top" secondItem="Q89-QY-yow" secondAttribute="bottom" constant="20" id="OYh-z8-ffG"/>
                             <constraint firstItem="Q89-QY-yow" firstAttribute="top" secondItem="YRr-JL-gkC" secondAttribute="bottom" constant="20" id="SNx-KN-Nee"/>
@@ -375,8 +361,6 @@
                             <constraint firstItem="3xe-4n-V2H" firstAttribute="trailing" secondItem="TZe-6x-EZn" secondAttribute="trailing" constant="20" id="mNx-kt-5sM"/>
                             <constraint firstItem="3xe-4n-V2H" firstAttribute="trailing" secondItem="YRr-JL-gkC" secondAttribute="trailing" constant="20" id="nWT-mc-FjJ"/>
                             <constraint firstItem="3xe-4n-V2H" firstAttribute="trailing" secondItem="kpR-Al-nbp" secondAttribute="trailing" constant="20" id="pBb-D7-vWQ"/>
-                            <constraint firstItem="3xe-4n-V2H" firstAttribute="trailing" secondItem="nBI-SZ-MVO" secondAttribute="trailing" id="qJj-VS-uUT"/>
-                            <constraint firstItem="nBI-SZ-MVO" firstAttribute="leading" secondItem="3xe-4n-V2H" secondAttribute="leading" id="uA8-eU-57T"/>
                             <constraint firstItem="4ly-b5-bT3" firstAttribute="top" secondItem="YRr-JL-gkC" secondAttribute="bottom" constant="30" id="ves-Nb-ktq"/>
                             <constraint firstItem="kpR-Al-nbp" firstAttribute="leading" secondItem="3xe-4n-V2H" secondAttribute="leading" constant="20" id="w0u-eU-1sN"/>
                             <constraint firstItem="YRr-JL-gkC" firstAttribute="top" secondItem="kpR-Al-nbp" secondAttribute="bottom" constant="20" id="wol-K2-nfm"/>
